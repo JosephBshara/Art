@@ -1,6 +1,6 @@
 /* General styles */
 #gallery img {
-  width: 20px;
+  width: 200px;
   height: auto;
   cursor: pointer;
 }
