@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
       img.onclick = function() {
         largeImage.src = imgSrc;
         popup.style.display = "block";
+          
       };
       gallery.appendChild(img);
     });
