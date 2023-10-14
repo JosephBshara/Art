@@ -132,3 +132,21 @@ html {
   margin-left: 20px;
   line-height: 1.5;
 }
+
+.water-color-gallery img {
+  width: 80%;  
+  height: auto; 
+  margin: 10px;
+}
+
+.figure-drawings-gallery img {
+  width: 80%;  
+  height: auto; 
+  margin: 10px;
+}
+
+.in-progress-gallery img {
+  width: 80%;  
+  height: auto; 
+  margin: 10px;
+}
