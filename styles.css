@@ -3,6 +3,7 @@ body {
   background-color: #ecf1ea;  /* Off-white / cream background */
   margin: 0;
   padding: 0;
+  margin-left: 100px;
 }
 
 /* Navbar */
@@ -10,7 +11,7 @@ body {
   position: fixed;
   top: auto;
   left: 0;
-  width: 200px;
+  width: 300px;
   height: 100%;
   background-color: #ecf1ea;  /* Background color of navigation panel */
 }
@@ -23,8 +24,9 @@ body {
 
 .navbar ul li {
   padding: 16px;
-  text-align:  center;
+  text-align:  left;
   font-size: 20px;
+  margin-left: 50px;
 }
 
 .navbar ul li a {
@@ -38,15 +40,18 @@ body {
 
 /* Art Circle in Navbar */
 .art-circle {
-  margin: 35px auto;
-  width: 70px;
-  height: 70px;
+  margin: 35px left;
+  width: 100px;
+  height: 100px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  margin-top: 60px;
   background-color: black;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 65px;
-  font-size: 35px;
+  line-height: 90px;
+  font-size: 50px;
 }
 
 /* Main Content */
@@ -110,4 +115,20 @@ html {
   font-family: 'Archivo Black', sans-serif;
   letter-spacing: 4px;  /* Adjust as needed */
   margin-left: 20px;
+}
+
+.special-img {
+  width: 80%;  /* Or whatever width you want thi s is mypic */
+  height: auto;  /* Maintain aspect ratio */
+  margin-left: 20px;
+}
+
+/*paragraph for home page*/
+.special-paragraph {
+  font-size: 26px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 1.5;
 }
