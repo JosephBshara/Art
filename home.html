@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <title>My Drawing Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div class="art-circle">Art.</div> <!-- Art circle here -->
+    <ul>
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="figure-drawings.html">Figure Drawings</a></li>
+      <li><a href="water-colors.html">Water Colors</a></li>
+      <li><a href="in-progress.html">In Progress</a></li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <h1 id="page-title">My Drawing Portfolio</h1> <!-- Title here -->
+    <div id="gallery">
+      <!-- Drawing thumbnails will go here -->
+    </div>
+    <div id="popup">
+      <img id="largeImage" src="">
+    </div>
+  </div>
+
+  <!-- Your existing script file -->
+  <script src="script.js"></script>
+
+  <!-- Inline script for smooth scrolling -->
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 1500, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
