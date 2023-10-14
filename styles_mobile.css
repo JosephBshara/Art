@@ -1,5 +1,22 @@
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 1em;
+  }
+
+  #gallery img, .figure-drawings-gallery img, .water-color-gallery img, .in-progress-gallery img {
+    width: 100%;
+  }
+}
+
 body {
-  background-color: #ecf1ea;
+  background-color: ecf1ea(49, 23, 242);
   margin: 0;
   padding: 0;
   margin-left: -1.5em;
@@ -164,3 +181,5 @@ html {
 .navbar ul li.active a {
   color: black;
 }
+
+
