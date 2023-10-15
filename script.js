@@ -71,14 +71,14 @@ document.querySelector('.art-circle').addEventListener('click', function() {
   const artCircle = document.querySelector('.art-circle');
   
   if (navbar.style.height === "15vw") {
-    navbar.style.setProperty('height', '6vw', 'important');  
+    navbar.style.setProperty('height', '7vw', 'important');  
     mainContent.style.setProperty('padding-top', '0.5vw', 'important');
     artCircle.style.setProperty('width', '8vw', 'important');  // Change size
     artCircle.style.setProperty('height', '8vw', 'important');  // Change size
     artCircle.style.setProperty('left', '10vw', 'important');  // Push it up
 
     artCircle.style.setProperty('font-size', '3.5vw', 'important');  // Change font size
-    artCircle.style.setProperty('line-height', '3vw', 'important');  // Change line height
+    artCircle.style.setProperty('line-height', '8vw', 'important');  // Change line height
 
     menuItems.forEach(item => {
       item.style.display = "none";
