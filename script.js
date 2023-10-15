@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       };
 
       const textDiv = document.createElement("div");
-      textDiv.className = 'drawing-name';
-      textDiv.innerHTML = "Drawing Name";
+
 
       imgWrapper.appendChild(img);
       imgWrapper.appendChild(textDiv);

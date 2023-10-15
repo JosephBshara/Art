@@ -1,5 +1,4 @@
 body {
-  background-color: #ecf1ea;
   margin: 0;
   padding: 0;
   margin-left: -1.5em;
@@ -23,7 +22,7 @@ body {
 .navbar ul li {
   padding: 3%;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
 .navbar ul li a {
@@ -36,18 +35,18 @@ body {
 }
 
 .art-circle {
-  margin: 35px left;
-  width: 100px;
-  height: 100px;
+  margin: 4.112808460634548vw left;
+  width:  11.750881316098708vw;
+  height:  11.750881316098708vw;
   margin-left: 0;
-  margin-bottom: 1em;
-  margin-top: 60px;
+  margin-bottom: 1.8801410105757932vw;
+  margin-top: 7.050528789659224vw;
   background-color: black;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 90px;
-  font-size: 50px;
+  line-height: 10.575793184488838vw;
+  font-size: 5.875440658049354vw;
 }
 
 .main-content {
@@ -56,7 +55,7 @@ body {
 }
 
 #page-title {
-  font-size: 3em;
+  font-size: 3vw;
   text-align: left;
 }
 
@@ -95,7 +94,7 @@ body {
 
 .drawing-name {
   text-align: left;
-  padding: 8px;
+  padding: 0.9400705052878966vw;
   background-color: #ecf1ea;
 }
 
@@ -105,20 +104,20 @@ html {
 
 #page-title {
   font-family: 'Archivo Black', sans-serif;
-  letter-spacing: 4px;
-  margin-left: 3%;
+  letter-spacing: 0.4700352526439483vw;
+  margin-left: 1.5vw;
   margin-bottom: 0em;
 }
 
 .special-img {
   width: 80%;
   height: auto;
-  margin-left: 3%;
+  margin-left: 1.5vw;
   margin-top: 3%;
 }
 
 .special-paragraph {
-  font-size: 26px;
+  font-size: 2vw;
   font-weight: bold;
   color: #555;
   margin-top: 3%;
@@ -129,19 +128,21 @@ html {
 .water-color-gallery img {
   width: 80%;
   height: auto;
-  margin: 10px;
+  margin: 0;
+  margin-bottom: -1.50881316098707vw;
 }
 
 .figure-drawings-gallery img {
   width: 80%;
   height: auto;
-  margin: 10px;
+  margin: 0;
+  margin-bottom: -4.50881316098707vw;
 }
 
 .in-progress-gallery img {
   width: 80%;
   height: auto;
-  margin: 10px;
+  margin: 0;
 }
 
 .figure-drawings-gallery img:hover,
@@ -163,4 +164,30 @@ html {
 /* Set the active link to black */
 .navbar ul li.active a {
   color: black;
+}
+
+
+body {
+  background-color:  #ecf1ea;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #ecf1ea;
+    margin: 0;
+    padding: 0;
+    margin-left: -2.8202115158636896vw;
+  }
+  .navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .main-content {
+    margin-left: 0;
+    padding: 1.8801410105757932vw;
+  }
+  #gallery img, .figure-drawings-gallery img, .water-color-gallery img, .in-progress-gallery img {
+    width: 100%;
+  }
 }
