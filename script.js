@@ -1,4 +1,6 @@
+
 document.addEventListener("DOMContentLoaded", function() {
+  // Common function to populate gallery
   // Common function to populate gallery
   function populateGallery(galleryClass, imageArray) {
     const gallery = document.querySelector(galleryClass);
@@ -31,22 +33,48 @@ document.addEventListener("DOMContentLoaded", function() {
     };
   }
 
+
+  
   // Populate different galleries
   populateGallery(".figure-drawings-gallery", ["drawing1.png", "drawing9.jpg", "drawing8.jpg", "drawing7.jpg"]);
   populateGallery(".water-color-gallery", ["drawing2.png", "drawing4.png", "drawing3.png"]);
   populateGallery(".in-progress-gallery", ["drawing11.jpg", "drawing10.jpg"]);
   populateGallery("#gallery", ["drawing5.jpg", "drawing6.jpg", "drawing7.jpg", "drawing8.jpg", "drawing9.jpg", "drawing10.jpg", "drawing11.jpg"]);
 
-  // Code to set the active navigation link
-  let links = document.querySelectorAll('.navbar ul li a');
-  let currentPage = window.location.pathname.split('/').pop();
-  
-  links.forEach((link) => {
-    let linkPage = link.getAttribute('href');
-    if (currentPage === linkPage) {
-      link.parentElement.classList.add('active');
-    } else {
-      link.parentElement.classList.remove('active');
-    }
+    // Code to set the active navigation link
+    let links = document.querySelectorAll('.navbar ul li a');
+    let currentPage = window.location.pathname.split('/').pop();
+    
+    links.forEach((link) => {
+      let linkPage = link.getAttribute('href');
+      if (currentPage === linkPage) {
+        link.parentElement.classList.add('active');
+      } else {
+        link.parentElement.classList.remove('active');
+      }
+    });
   });
+
+// Toggle menu items' visibility and navbar size
+document.querySelector('.art-circle').addEventListener('click', function() {
+  if (window.innerWidth <= 768) {
+  const menuItems = document.querySelectorAll('.navbar ul li');
+  const navbar = document.querySelector('.navbar');
+  const mainContent = document.querySelector('.main-content');
+  
+  if (navbar.style.height === "15vw") {
+    navbar.style.setProperty('height', '6vw', 'important');  
+    mainContent.style.setProperty('padding-top', '0.5vw', 'important');
+    menuItems.forEach(item => {
+      item.style.display = "none";
+    });
+  } else {
+    navbar.style.setProperty('height', '15vw', 'important');  
+    mainContent.style.setProperty('padding-top', '8vw', 'important');
+    menuItems.forEach(item => {
+      item.style.display = "block";
+    });
+  }
+  }
 });
+

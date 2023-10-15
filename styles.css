@@ -171,19 +171,40 @@ body {
   background-color:  #ecf1ea;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     background-color: #ecf1ea;
-    margin: 0;
+    margin-top: 10vw;
     padding: 0;
     margin-left: -2.8202115158636896vw;
   }
   .navbar {
-    width: 100%;
-    height: auto;
-    position: relative;
+    background-color: #c5cac3;
+    width: 100%;  
+    height: 15vw;
+    position: fixed;
+    top : 0;
+    left: 0;
+    z-index: 9999;
+    
   }
+  
+  .navbar ul {
+    position: absolute;
+    top: 50%;
+    left: 15vw;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar ul li {
+    font-size: 3vw; /* or any size you prefer */
+  }
+
   .main-content {
+    padding-top: 5vw !important;
     margin-left: 0;
     padding: 1.8801410105757932vw;
   }
