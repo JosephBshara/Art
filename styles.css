@@ -35,18 +35,18 @@ body {
 }
 
 .art-circle {
-  margin: 4.112808460634548vw left;
-  width:  11.750881316098708vw;
-  height:  11.750881316098708vw;
+  margin: 4.1128vw left;
+  width: 11.75vw;
+  height: 11.75vw;
   margin-left: 0;
-  margin-bottom: 1.8801410105757932vw;
-  margin-top: 7.050528789659224vw;
+  margin-bottom: 1.88vw;
+  margin-top: 7.05vw;
   background-color: black;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 10.575793184488838vw;
-  font-size: 5.875440658049354vw;
+  line-height: 10.57vw;
+  font-size: 5.87vw;
 }
 
 .main-content {
@@ -94,7 +94,7 @@ body {
 
 .drawing-name {
   text-align: left;
-  padding: 0.9400705052878966vw;
+  padding: 0.94vw;
   background-color: #ecf1ea;
 }
 
@@ -104,7 +104,7 @@ html {
 
 #page-title {
   font-family: 'Archivo Black', sans-serif;
-  letter-spacing: 0.4700352526439483vw;
+  letter-spacing: 0.47vw;
   margin-left: 1.5vw;
   margin-bottom: 0em;
 }
@@ -125,21 +125,7 @@ html {
   line-height: 1.5;
 }
 
-.water-color-gallery img {
-  width: 80%;
-  height: auto;
-  margin: 0;
-  margin-bottom: -1.50881316098707vw;
-}
-
-.figure-drawings-gallery img {
-  width: 80%;
-  height: auto;
-  margin: 0;
-  margin-bottom: -4.50881316098707vw;
-}
-
-.in-progress-gallery img {
+.water-color-gallery img, .figure-drawings-gallery img, .in-progress-gallery img {
   width: 80%;
   height: auto;
   margin: 0;
@@ -151,24 +137,20 @@ html {
   filter: brightness(20%);
 }
 
-/* Add this to make the hovered field purple */
 .navbar ul li a:hover {
   color: rgb(227, 79, 165);
 }
 
-/* Initially set all links to gray */
 .navbar ul li a {
   color: rgb(177, 174, 174);
 }
 
-/* Set the active link to black */
 .navbar ul li.active a {
   color: black;
 }
 
-
 body {
-  background-color:  #ecf1ea;
+  background-color: #ecf1ea;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,65 +158,73 @@ body {
     background-color: #ecf1ea;
     margin-top: 10vw;
     padding: 0;
-    margin-left: -2.8202115158636896vw;
+    margin-left: 0;
   }
+  
   .navbar {
     background-color: #c5cac3;
-    width: 100%;  
-    height: 15vw;
+    width: 100%;
+    height: auto;
     position: fixed;
-    top : 0;
+    top: 0;
     left: 0;
     z-index: 9999;
-    
   }
   
   .navbar ul {
-    position: absolute;
-    top: 50%;
-    left: 15vw;
-    right: 0;
-    transform: translateY(-50%);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 1vw 0;
   }
+  
   .navbar ul li {
-    font-size: 3vw; /* or any size you prefer */
+    font-size: 4vw;
   }
+  
   .navbar ul li a {
     color: rgb(255, 254, 254);
   }
 
-
   #page-title {
-    font-size: 7vw;
-    text-align: left;
+    font-size: 8vw;
+    text-align: center;
+    margin-top: 20vw;
+    font-family: 'Archivo Black', sans-serif;
   }
 
   .special-img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-left: 0vw;
-    margin-top: 1vw;
+    margin: 2vw auto;
+    display: block;
+  }
+
+  .special-paragraph {
+    font-size: 5vw;
+    font-weight: bold;
+    color: #555;
+    margin-top: 2vw;
+    text-align: center;
   }
 
   .art-circle {
-  position: left;
-  margin-left: 8vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  line-height: 11.750881316098708vw;;  /* Make this the same as your circle height */
-}
+    margin: 2vw auto;
+    width: 30vw;
+    height: 30vw;
+    display: block;
+    line-height: 30vw;
+    font-size: 14vw;
+  }
 
   .main-content {
-    padding-top: 5vw !important;
-    margin-left: 2.5vw;
-    padding: 1.8801410105757932vw;
+    padding-top: 5vw;
+    margin: 0 auto;
+    width: 90%;
   }
+
   #gallery img, .figure-drawings-gallery img, .water-color-gallery img, .in-progress-gallery img {
     width: 100%;
+    margin: 0 auto;
   }
 }
